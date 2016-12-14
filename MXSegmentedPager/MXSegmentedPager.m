@@ -128,6 +128,8 @@
     frame.size.width -= self.segmentedControlEdgeInsets.left;
     frame.size.width -= self.segmentedControlEdgeInsets.right;
     frame.size.height = _controlHeight;
+    //контроль высоты х1
+    frame.size.height = 35.f;
     
     self.segmentedControl.frame = frame;
 }
@@ -147,6 +149,9 @@
     frame.size.height -= self.segmentedControlEdgeInsets.top;
     frame.size.height -= self.segmentedControlEdgeInsets.bottom;
     frame.size.height -= self.contentView.parallaxHeader.minimumHeight;
+    
+    //контроль высоты х2
+    frame.origin.y = 35.f;
     
     self.pager.frame = frame;
 }
